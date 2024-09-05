@@ -25,17 +25,42 @@
 }
 
 body {
-    background-color: lightblue;
+    background-image: url(./7a86e9v99jd41.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: background-color 0.5s ease-in-out;
+    align-items: center;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
     margin: 0;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 75vh;
     overflow: hidden;
     text-align: center;
     z-index: 1;
-    padding: 75px;
-
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    background-color: #f1f1f1;
+    animation: fade-in-animation 1s ease-in-out;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 100px;
+    animation-name: fade-in-animation;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-play-state: running;
+    z-index: 2;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: paused;
 }
 
 .titlle:hover {
@@ -84,6 +109,7 @@ body {
 }
 
 p {
+    text-align: center;
     animation: fade-in-animation 2s ease-in-out;
     margin: 20px;
     padding: 20px;
@@ -96,7 +122,6 @@ p {
     font-family: 'Montserrat', sans-serif;
     background-color: #f2f2f2;
     border-radius: 12px;
-    display: flex;
     max-width: 400px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin: 20px auto;
